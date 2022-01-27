@@ -8,9 +8,10 @@
         <div>
           <div>
             <ul>
-              <li><a href="http://localhost:8080/">Home</a></li>
-              <li><a href="http://localhost:8080/about">About</a></li>
-              <li><a href="http://localhost:8080/contact">Contact</a></li>
+              <li><a href="https://fitnessdood.netlify.app/">Home</a></li>
+              <li><a href="https://fitnessdood.netlify.app/new">New Entry</a></li>
+              <li><a href="https://fitnessdood.netlify.app/about">About</a></li>
+              <li><a href="https://fitnessdood.netlify.app/contact">Contact</a></li>              
             </ul>
           </div>
         </div>
