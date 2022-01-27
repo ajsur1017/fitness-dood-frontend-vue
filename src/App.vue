@@ -9,8 +9,8 @@
           <div>
             <ul>
               <li><a href="http://localhost:8080/">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="http://localhost:8080/about">About</a></li>
+              <li><a href="http://localhost:8080/contact">Contact</a></li>
             </ul>
           </div>
         </div>

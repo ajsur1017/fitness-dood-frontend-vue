@@ -4,6 +4,8 @@
 import AllNotes from "./pages/AllNotes.vue";
 import SingleNote from "./pages/SingleNote.vue";
 import Form from "./pages/Form.vue";
+import About from "./pages/About.vue";
+import Contact from "./pages/Contact.vue";
 /////////////////////////
 // Array of Routes
 /////////////////////////
@@ -16,4 +18,8 @@ export default [
   { path: "/new", component: Form },
   // route for updating a todo
   { path: "/note/edit", component: Form, props: true },
+  // route for about
+  { path: "/about", component: About },
+  // route for contact
+  { path: "/contact", component: Contact }
 ];
