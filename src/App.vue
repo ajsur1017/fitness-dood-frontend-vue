@@ -8,10 +8,10 @@
         <div>
           <div>
             <ul>
-              <li><a href="https://fitnessdood.netlify.app/">Home</a></li>
-              <li><a href="https://fitnessdood.netlify.app/new">New Entry</a></li>
-              <li><a href="https://fitnessdood.netlify.app/about">About</a></li>
-              <li><a href="https://fitnessdood.netlify.app/contact">Contact</a></li>              
+              <li><router-link href="https://fitnessdood.netlify.app/">Home</router-link></li>
+              <li><router-link href="https://fitnessdood.netlify.app/new">New</router-link></li>
+              <li><router-link href="https://fitnessdood.netlify.app/about">About</router-link></li>
+              <li><router-link href="https://fitnessdood.netlify.app/contact">Contact</router-link></li>              
             </ul>
           </div>
         </div>
