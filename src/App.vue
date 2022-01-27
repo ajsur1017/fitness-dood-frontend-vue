@@ -9,9 +9,10 @@
           <div>
             <ul>
               <li><router-link to="/"><div>Home</div></router-link></li>
-              <li><router-link to="/new"><div>Contact</div></router-link></li>
+              <li><router-link to="/new"><div>New</div></router-link></li>
               <li><router-link to="/about"><div>About</div></router-link></li>
-              <li><router-link to="/contact"><div>Contact</div></router-link></li></ul>
+              <li><router-link to="/contact"><div>Contact</div></router-link></li>
+              </ul>
           </div>
         </div>
       </div>
@@ -25,36 +26,36 @@
 </template>
 
 <script>
-  import { ref, onMounted } from "vue"; // Import Composition API Hooks
-  // ref hook allows use to create reactive variables
-  // onMounted let's us execute code when component mounts
+import { ref, onMounted } from "vue"; // Import Composition API Hooks
+// ref hook allows use to create reactive variables
+// onMounted let's us execute code when component mounts
 
-  export default {
-    name: "App",
-    // Setup property allows us to use new composition api to define properties/methods
-    // Returns an object with any properties/methods the component should have
-    setup(props) {
-      // variable with base url for API calls
-      const url = "https://fitness-dood-noauth.herokuapp.com/notes/";
-      // ref for holding all the notes
-      const notes = ref([]);
-      // method for getting notes
-      const getNotes = async () => {
-        const response = await fetch(url);
-        const data = await response.json();
-        notes.value = await data;
-      };
-      //run getNotes once when component loads
-      onMounted(() => getNotes());
-      // return component properties and methods
-      return {
-        notes,
-        getNotes,
-        url,
-        ...props,
-      };
-    },
-  };
+export default {
+  name: "App",
+  // Setup property allows us to use new composition api to define properties/methods
+  // Returns an object with any properties/methods the component should have
+  setup(props) {
+    // variable with base url for API calls
+    const url = "https://fitness-dood-noauth.herokuapp.com/notes/";
+    // ref for holding all the notes
+    const notes = ref([]);
+    // method for getting notes
+    const getNotes = async () => {
+      const response = await fetch(url);
+      const data = await response.json();
+      notes.value = await data;
+    };
+    //run getNotes once when component loads
+    onMounted(() => getNotes());
+    // return component properties and methods
+    return {
+      notes,
+      getNotes,
+      url,
+      ...props,
+    };
+  },
+};
 </script>
 
 <style>
@@ -260,5 +261,8 @@ body {
   color: inherit;
   text-decoration: none;
   transition: opacity 0.4s ease;
+
 }
+/* 
+This used to auto close on click but when updated the <a> tags to <router-link> it now has to be closed manually, even though the styles sheer and elements display on dev tools still shows the route to apply css. Thinking <router-link> creats some sort of layer? */
 </style>
