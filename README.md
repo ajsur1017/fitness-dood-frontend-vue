@@ -27,6 +27,8 @@ Welcome to fitnessDOOD. This is a simple application that was built using ruby o
 #### Contact form
 * As a last minute project I attempted to add a function contact us form.
 * The current state of the form does absolutly nothing except take you inputs and clear the form, I would like to make that function one day as well. 
+#### Mobile viewing
+* Would like to set up media querys to make this application mobile friendly. 
 
 
 ## Project setup
